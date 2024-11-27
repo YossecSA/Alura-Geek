@@ -2,9 +2,33 @@
     "productos":[
         {
             "id": 1,
-            "nombre": "",
-            "precio": "10",
-            "imagen": ""
+            "nombre": "Motocicleta",
+            "precio": "37,40",
+            "imagen": "https://img.kwcdn.com/product/fancy/998b8cee-6613-4d1a-85a3-379042b121e6.jpg?imageView2/2/w/800/q/70/format/webp"
+        },
+        {
+            "id": 2,
+            "nombre": "DODGE",
+            "precio": "61,50",
+            "imagen": "https://img.kwcdn.com/product/fancy/cb236462-8e31-4756-963e-c586dbabbdd5.jpg?imageView2/2/w/800/q/70/format/webp"
+        },
+        {
+            "id": 3,
+            "nombre": "Teclado Snpurdiri",
+            "precio": "105,20",
+            "imagen": "https://img.kwcdn.com/product/fancy/7e96a6db-b794-4002-a982-6caa7245e340.jpg?imageView2/2/w/800/q/70/format/webp"
+        },
+        {
+            "id": 4,
+            "nombre": "Robot",
+            "precio": "56,59",
+            "imagen": "https://img.kwcdn.com/product/fancy/market/ec795bc3ac4c60b4ce0e34a5895b8f78_Y8Uj7m1a3QpRh.jpg?imageView2/2/w/800/q/70/format/webp"
+        },
+        {
+            "id": 5,
+            "nombre": "Transformes",
+            "precio": "621.54",
+            "imagen": "https://img.kwcdn.com/product/fancy/574f4487-0189-44fd-afea-c567be76753f.jpg?imageView2/2/w/800/q/70/format/webp"
         }
     ]
 }
