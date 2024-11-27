@@ -18,11 +18,11 @@
     <main>
         <section class="add-product">
             <h2 class="add-product__title">Agregar Producto</h2>
-            <form class="add-product__form" action="#" method="POST">
+            <form class="add-product__form" data-formulario>
                 <div class="add-product__inputs">
-                    <input class="add-product__input" type="text" name="nombre" placeholder="Nombre..." required>
-                    <input class="add-product__input" type="text" name="precio" placeholder="Precio..." required>
-                    <input class="add-product__input" type="text" name="imagen" placeholder="URL de la imagen..." required>
+                    <input class="add-product__input" type="text" name="nombre" placeholder="Nombre..."  data-nombre>
+                    <input class="add-product__input" type="number" name="precio" placeholder="Precio..."  data-precio>
+                    <input class="add-product__input" type="text" name="imagen" placeholder="URL de la imagen..."  data-imagen>
                 </div>
                 <div class="add-product__buttons">
                     <button class="add-product__btn add-product__btn--submit" type="submit">Enviar</button>
@@ -47,6 +47,8 @@
             <span class="footer__rights">Alura Latam - 2024</span>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/registrarProductos.js" type="module"></script>
     <script src="./js/listarProductos.js" type="module"></script>
 </body>
 </html>
