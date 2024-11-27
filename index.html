@@ -16,7 +16,20 @@
         <h1 class="header__title">AluraGeek</h1>
     </header>
     <main>
-        
+        <section class="add-product">
+            <h2 class="add-product__title">Agregar Producto</h2>
+            <form class="add-product__form" action="#" method="POST">
+                <div class="add-product__inputs">
+                    <input class="add-product__input" type="text" name="nombre" placeholder="Nombre..." required>
+                    <input class="add-product__input" type="text" name="precio" placeholder="Precio..." required>
+                    <input class="add-product__input" type="text" name="imagen" placeholder="URL de la imagen..." required>
+                </div>
+                <div class="add-product__buttons">
+                    <button class="add-product__btn add-product__btn--submit" type="submit">Enviar</button>
+                    <button class="add-product__btn add-product__btn--reset" type="reset">Limpiar</button>
+                </div>
+            </form>
+        </section>
     </main>
     <footer class="footer">
         <div class="footer__logo-container">

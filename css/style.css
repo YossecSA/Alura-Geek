@@ -2,7 +2,8 @@
 :root {
     --color-primario: #5300C8;
     --color-blanco: #e5e5ee;
-    --color-gradiente-inicio: #6a00ff;
+    --color-input: #03318C;
+    --color-input-focus: #8C0375;
     --color-gradiente-fin: #3a008e;
     --font-size-title: 24px;
     --padding-header: 1rem;
@@ -33,10 +34,70 @@ body{
 }
 main {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+}
+.add-product{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    padding: 40px;
+}
+.add-product__title{
+    font-size: 24px;
+    color: #000;
+    line-height: 21px;
     text-align: center;
-    padding: 2rem;
+}
+
+.add-product__form{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-family: "IBM Plex Mono", monospace;
+}
+
+.add-product__input {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1.75rem;
+    border: 3px solid var(--color-input);
+    border-radius: 50px;
+    background-color: #FFF;
+    color: var(--color-input);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.add-product__input::placeholder {
+    color:  var(--color-input);
+}
+
+.add-product__input:focus {
+    outline: none; 
+    border-color: var(--color-input-focus); 
+    box-shadow: 0 0 5px var(--color-input-focus);
+}
+.add-product__buttons{
+    display: flex;
+    gap: 12px;
+    justify-content: space-around;
+}
+.add-product__btn{
+    width: 150px;
+    height: 55px;
+    font-size: 1rem;
+    border-radius: 1rem;
+    font-weight: 500;
+    background-color: var(--color-input);
+    cursor: pointer;
+}
+.add-product__btn--submit{
+    color: #ffffff;
+}
+.add-product__btn--reset{
+    color: var(--color-input);
+    background-color: #FFF;
+    border: 3px solid var(--color-input);
 }
 
 .footer{
