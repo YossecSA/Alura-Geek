@@ -1,4 +1,5 @@
 import { conexion } from "./conexion.js";
+import { eliminarProducto } from "./eliminarProducto.js";
 
 const lista = document.querySelector("[data-lista]");
 
@@ -14,11 +15,16 @@ export default function crearCardProduct(id, nombre, imagen, precio) {
             <span class="product__name">${nombre}</span>
             <div class="product__price-container">
                 <span class="product__price"><span>$</span>${precio}</span>
-                <img class="product__delete-icon" src="./assets/img/icon_trash.png" alt="Eliminar producto">
+                <img class="product__delete-icon" src="./assets/img/icon_trash.png" alt="Eliminar producto" data-id="${id}">
             </div>
         </div>
     `;
 
+    const deleteIcon = productCard.querySelector(".product__delete-icon");
+    deleteIcon.addEventListener("click", (event) => {
+        event.preventDefault();
+        eliminarProducto(id, productCard);
+    });
     return productCard;
 }
 

@@ -23,7 +23,29 @@ async function registrarProductos(nombre, precio, imagen) {
     return conexionConvertida;
 }
 
+async function eliminarProducto(codProducto) {
+    try {
+        const conexion = await fetch(`http://localhost:3000/productos/${codProducto}`, {
+            method: "DELETE",
+            headers: {
+                "Content-Type": "application/json"
+            }
+        });
+
+        if (!conexion.ok) {
+            throw new Error("Error al eliminar el producto");
+        }
+
+        const conexionConvertida = await conexion.json();
+        return conexionConvertida;
+    } catch (error) {
+        console.error(error);
+        throw new Error("Ocurrió un error al intentar eliminar el producto");
+    }
+}
+
 export const conexion = {
     listarProductos,
-    registrarProductos
+    registrarProductos,
+    eliminarProducto
 }
