@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+:root {
+    --color-primario: #5300C8;
+    --color-blanco: #e5e5ee;
+    --color-gradiente-inicio: #6a00ff;
+    --color-gradiente-fin: #3a008e;
+    --font-size-title: 24px;
+    --padding-header: 1rem;
+}
+body{
+    margin: 0;
+    font-family: "Press Start 2P", serif;
+    display: grid;
+    grid-template-rows: auto 1fr auto; /* Tres filas: header (auto), main (flexible), footer (auto) */
+    min-height: 100vh;
+}
+.header{
+    background-color: #5300C8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+.header__logo {
+    width: 120px; 
+    height: auto; 
+    margin-right: 1rem;
+}
+.header__title{
+    color: var(--color-blanco);
+    font-size: 24px;
+    line-height: 16px;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-primario);
+    padding: 1rem;
+}
+.footer__logo-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+.footer__logo-text{
+    color: var(--color-blanco);
+    font-size: 24px;
+    line-height: 16px;
+}
+.footer__info{
+    color: #ffffff;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "IBM Plex Mono", monospace;
+    gap: 1rem;
+}
